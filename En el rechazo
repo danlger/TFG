@@ -1,0 +1,22 @@
+{
+"inputs": {
+"host": {
+"connectionName": "shared_office365",
+"operationId": "SendEmailV2",
+"apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+},
+"parameters": {
+"emailMessage/To": "daniel.ruiz785@comunidadunir.net",
+"emailMessage/Subject": "Documento rechazado",
+"emailMessage/Body": "
+
+El documento ha sido rechazado y no se ha subido a la carpeta
+
+"
+},
+"authentication": "@parameters('$authentication')"
+},
+"metadata": {
+"operationMetadataId": "9368109c-eafc-4513-988b-d0b382178150"
+}
+}
