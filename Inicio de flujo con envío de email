@@ -1,0 +1,23 @@
+{
+"inputs": {
+"host": {
+"connectionName": "shared_approvals",
+"operationId": "StartAndWaitForAnApproval",
+"apiId": "/providers/Microsoft.PowerApps/apis/shared_approvals"
+},
+"parameters": {
+"approvalType": "Basic",
+"WebhookApprovalCreationInput/title": "Aprobación de documento",
+"WebhookApprovalCreationInput/assignedTo": "daniel.ruiz785@comunidadunir.net;",
+"WebhookApprovalCreationInput/enableNotifications": true,
+"WebhookApprovalCreationInput/enableReassignment": true
+},
+"authentication": {
+"type": "Raw",
+"value": "@JSON(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+}
+},
+"metadata": {
+"operationMetadataId": "50e517a6-60ac-48e9-ad35-462b69d17848"
+}
+}
