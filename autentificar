@@ -1,0 +1,6 @@
+"authentication": "@parameters('$authentication')"
+},
+"metadata": {
+"operationMetadataId": "3129bca9-fcce-4a8a-b710-dc08c9d828d1"
+}
+}
