@@ -1,0 +1,22 @@
+{
+"inputs": {
+"host": {
+"connectionName": "shared_office365",
+"operationId": "SendEmailV2",
+"apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+},
+"parameters": {
+"emailMessage/To": "daniel.ruiz785@comunidadunir.net",
+"emailMessage/Subject": "Archivo aprobado",
+"emailMessage/Body": "
+
+El documento ha sido aprobado y subido a la carpeta
+
+"
+},
+"authentication": "@parameters('$authentication')"
+},
+"metadata": {
+"operationMetadataId": "72d8d8c3-32be-4371-a2c9-9be9db750dad"
+}
+}
