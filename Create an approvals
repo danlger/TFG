@@ -1,0 +1,17 @@
+{
+"inputs": {
+"host": {
+"connectionName": "shared_approvals",
+"operationId": "CreateAnApproval",
+"apiId": "/providers/Microsoft.PowerApps/apis/shared_approvals"
+},
+"parameters": {
+"approvalType": "Basic",
+"ApprovalCreationInput/title": "Review new SharePoint file '@{triggerOutputs()?['body/{FilenameWithExtension}']}'",
+"ApprovalCreationInput/assignedTo": "daniel.ruiz785@comunidadunir.net;",
+"ApprovalCreationInput/details": "- Added to: @{triggerOutputs()?['body/{Path}']}\n- 
+Created by: @{triggerOutputs()?['body/Author/DisplayName']} <@{triggerOutputs()?['body/Author/Email']}>\n-
+Created time (UTC): @{triggerOutputs()?['body/Created']}",
+"ApprovalCreationInput/itemLink": "@triggerOutputs()?['body/{Link}']",
+"ApprovalCreationInput/itemLinkDescription": "@triggerOutputs()?['body/{FilenameWithExtension}']"
+},
