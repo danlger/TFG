@@ -1,0 +1,24 @@
+{
+"inputs": {
+"host": {
+"connectionName": "shared_sharepointonline",
+"operationId": "GetOnNewFileItems",
+"apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+},
+"parameters": {
+"dataset": "https://alumnosunir.sharepoint.com/sites/BasedeDatosUNIR",
+"table": "73b8ad4b-6e52-42c3-ac0a-dbf6c5cda858",
+"folderPath": ""
+},
+"authentication": "@parameters('$authentication')"
+},
+"recurrence": {
+"interval": 5,
+"frequency": "Minute"
+},
+"metadata": {
+"operationMetadataId": "ab109de6-8af5-490c-9846-1a607554f88b"
+},
+"splitOn": "@triggerOutputs()?['body/value']"
+}
+
