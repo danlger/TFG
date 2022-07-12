@@ -1,0 +1,24 @@
+{
+"kind": "Button",
+"inputs": {
+"schema": {
+"type": "object",
+"properties": {
+"email": {
+"title": "Email_address",
+"type": "string",
+"format": "email",
+"x-ms-dynamically-added": true,
+"description": "daniel.ruiz785@comunidadunir.net",
+"x-ms-content-hint": "EMAIL"
+}
+},
+"required": [
+"email"
+]
+}
+},
+"metadata": {
+"operationMetadataId": "7cab1838-0627-410b-a1bc-777407424ab2"
+}
+}
