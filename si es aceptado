@@ -1,0 +1,25 @@
+{
+"inputs": {
+"host": {
+"connectionName": "shared_office365",
+"operationId": "SendEmailV2",
+"apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+},
+"parameters": {
+"emailMessage/To": "daniel.ruiz785@comunidadunir.net",
+"emailMessage/Subject": "Se aprobó el documento",
+"emailMessage/Body": "
+
+Documento aprobado
+
+"
+},
+"authentication": {
+"type": "Raw",
+"value": "@JSON(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+}
+},
+"metadata": {
+"operationMetadataId": "eaa2043b-33ed-42f0-b731-005285d04c53"
+}
+}
